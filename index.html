@@ -116,36 +116,14 @@
         });
       };
       document.body.appendChild(script);
+	  function Media()
+	  {
+			alert('efwef');
+	  }
     </script>
 	<script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script>
 <script type="text/javascript" src="//ad.mail.ru/static/admanhtml/rbadman-html5.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="//vk.com/js/api/adman_init.js" charset="utf-8"></script>
-<script>
-function Media()
- {
- window.addEventListener('load', function() {
- 
-    var user_id = 27395915;   // user's id
-    var app_id = 7846691;  // your app's id
- 
-    admanInit({
-      user_id: 27395915,
-      app_id: 7846691,
-      mobile: true,
-      type: 'rewarded' 			// 'preloader' or 'rewarded' (default - 'preloader')
-      // params: {preview: 1}   // to verify the correct operation of advertising
-    }, onAdsReady, onNoAds);
- 
-    function onAdsReady(adman) {
-      adman.onStarted(function () {});
-      adman.onCompleted(function() {});
-      adman.onSkipped(function() {});      
-      adman.onClicked(function() {}); 
-      adman.start('preroll');
-    };
-    function onNoAds() {};
-  });
 
- }
   </body>
 </html>
