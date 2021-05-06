@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Build.loader.js";
+      var loaderUrl = buildUrl + "/Build2.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Build.data.unityweb",
-        frameworkUrl: buildUrl + "/Build.framework.js.unityweb",
-        codeUrl: buildUrl + "/Build.wasm.unityweb",
+        dataUrl: buildUrl + "/Build2.data.unityweb",
+        frameworkUrl: buildUrl + "/Build2.framework.js.unityweb",
+        codeUrl: buildUrl + "/Build2.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "color switch",
@@ -91,6 +91,7 @@
         canvas.style.width = window.innerWidth + 'px';
         canvas.style.height = window.innerHeight + 'px';
 
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
@@ -116,14 +117,13 @@
       };
       document.body.appendChild(script);
     </script>
-	
-	
-	                    
-<script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script>
+	<script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script>
 <script type="text/javascript" src="//ad.mail.ru/static/admanhtml/rbadman-html5.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="//vk.com/js/api/adman_init.js" charset="utf-8"></script>
 <script>
-  window.addEventListener('load', function() {
+function Media()
+ {
+ window.addEventListener('load', function() {
  
     var user_id = null;   // user's id
     var app_id = 7846691;  // your app's id
@@ -145,6 +145,7 @@
     };
     function onNoAds() {};
   });
-</script>
+
+ }
   </body>
 </html>
