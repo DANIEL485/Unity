@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-  <script type="text/javascript" src="//vk.com/js/api/xd_connection.js?2" charset="utf-8"></script>
-	<script type="text/javascript" src="//ad.mail.ru/static/admanhtml/rbadman-html5.min.js" charset="utf-8"></script>
-	<script type="text/javascript" src="//vk.com/js/api/adman_init.js" charset="utf-8"></script>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | color switch</title>
+    <title>Unity WebGL Player | ColorSwitch</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -23,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">color switch</div>
+        <div id="unity-build-title">ColorSwitch</div>
       </div>
     </div>
     <script>
@@ -59,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/build3.loader.js";
+      var loaderUrl = buildUrl + "/game.loader.js";
       var config = {
-        dataUrl: buildUrl + "/build3.data.unityweb",
-        frameworkUrl: buildUrl + "/build3.framework.js.unityweb",
-        codeUrl: buildUrl + "/build3.wasm.unityweb",
+        dataUrl: buildUrl + "/game.data.gz",
+        frameworkUrl: buildUrl + "/game.framework.js.gz",
+        codeUrl: buildUrl + "/game.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "color switch",
-        productVersion: "0.1",
+        productName: "ColorSwitch",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
@@ -119,35 +116,6 @@
         });
       };
       document.body.appendChild(script);
-	  function media()
-	  {
-		alert('sfsf');
- 
-    var user_id = 27395915;   // user's id
-    var app_id = 7846691;  // your app's id
- 
-    admanInit({
-      user_id: user_id,
-      app_id: 7846691,
-      mobile: true,
-      type: 'rewarded' 			// 'preloader' or 'rewarded' (default - 'preloader')
-      // params: {preview: 1}   // to verify the correct operation of advertising
-    }, onAdsReady, onNoAds);
- 
-    function onAdsReady(adman) {
-      adman.onStarted(function () {});
-      adman.onCompleted(function() {});
-      adman.onSkipped(function() {});      
-      adman.onClicked(function() {}); 
-      adman.start('preroll');
-    };
-    function onNoAds() {};
-
-}
-	  
-
-</script>
-    
     </script>
   </body>
 </html>
